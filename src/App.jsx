@@ -21,7 +21,7 @@ export const App = () => {
   return (
     <main className="section container">
       <h1 className="title is-flex is-align-items-center">
-        {selectedGood ? `${setSelectedGood} is selected` : 'No goods selected'}
+        {selectedGood ? `${selectedGood} is selected` : 'No goods selected'}
 
         {selectedGood && (
           <button
@@ -67,7 +67,7 @@ export const App = () => {
                 )}
               </td>
               <td data-cy="GoodTitle" className="is-vcentered">
-                {goods}
+                {good}
               </td>
             </tr>
           ))}
